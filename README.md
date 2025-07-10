@@ -1,0 +1,18 @@
+# Guide to my Music Player
+Hi, welcome to my Music Player, wanna try it out? Follow the steps below!
+
+## Step 1
+You must download the song from this [link](https://drive.google.com/drive/folders/1tNoxCnJ_eO92LY8YPh9tz5nS7J9V02PN?usp=sharing).
+Now that's done, let's move onto the second step.
+
+## Step 2
+Extract the songs amd copy them into the _**media**_ folder inside the _music-player_ folder as shown below:
+![Image of Copying Songs](https://iili.io/FEkSIlS.png)
+![Image of Posting Songs](https://iili.io/FEkSoil.png)
+
+## Step 3
+Open the site locally through the live server within VSCode, and voila! It should look something like this:
+![Iamge of Music Player Site](https://iili.io/FEkS5Ou.png)
+
+> [!NOTE]
+> Just start by clicking **PLAY** on one of the music cards and the song should start playing. If you don't do that, it probably might confuse you into thinking that the site doesn't work.
