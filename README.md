@@ -1,7 +1,7 @@
 # Guide to my Music Player
 
 ## Step 1
-You must download the song from this [link](https://docs.google.com/document/d/16sE2WPL5qIYGvhc-h9wUarhs9K3XMuiWpvoxFusqfJs/edit?usp=sharing).
+You must download the song from this [link](https://drive.google.com/drive/folders/1tNoxCnJ_eO92LY8YPh9tz5nS7J9V02PN?usp=sharing).
 Now that's done, let's move onto the second step.
 
 ## Step 2
