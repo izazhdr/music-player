@@ -1,4 +1,5 @@
 # Guide to my Music Player
+Hi, welcome to my Music Player, wanna try it out? Follow the steps below!
 
 ## Step 1
 You must download the song from this [link](https://drive.google.com/drive/folders/1tNoxCnJ_eO92LY8YPh9tz5nS7J9V02PN?usp=sharing).
