@@ -263,17 +263,4 @@ body {
   .greetings {
     display: none;
   }
-
-  .app-name {
-    position: absolute;
-    width: 100%;
-  }
-
-  .app-name p {
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    margin-right: 30px;
-    color: var(--text-color);
-  }
 }
