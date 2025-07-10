@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Musique</title>
+    <script src="https://kit.fontawesome.com/cd9f42f736.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="app-name">
+            <p>MUSIQUE</p>
+        </div>
+        <div class="greetings">
+            <p>Greetings</p>
+        </div>
+        <button class="theme-switch">
+            <img src="media/dark-mode.svg" alt="dark-mode">
+            <img src="media/light-mode.svg" alt="light-mode">
+        </button>
+    </div>
+
+    <div class="grid-container"></div>
+
+    <div class="player-control">
+        <div class="current-song-name">
+            <p class="playing">Playing</p>
+            <p class="song-name">Song Name</p>
+            <p class="song-artist">Artist Name</p>
+        </div>
+        <div class="music-player">
+            <audio id="song" class="js-song">
+                <source class="js-audio-source" src="-" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div class="js-backward"><i class="fa-solid fa-backward"></i></div>
+                <div class="js-play-pause"><i class="fa-solid fa-pause" id="ctrlIcon"></i></div>
+                <div class="js-forward"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+        <img src="media/neffex.png" alt="" class="current-song-img">
+    </div>
+
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script type="module" src="dom.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
