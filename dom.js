@@ -18,7 +18,7 @@ let currentSongArray = [];
 let playButton = document.querySelectorAll('.js-card-play-button');
 let forwardButton = document.querySelector('.js-forward');
 let backwardButton = document.querySelector('.js-backward');
-let playerControl = document.querySelector('.player-control');
+let playerControl = document.querySelector('.player-control'); /* Player Control must be invisible at first. */
 
 let forwardPlacementValue;
 let backwardPlacementValue;

@@ -66,3 +66,5 @@ function formatTime(seconds) {
   let secs = seconds % 60;
   return mins + ":" + (secs < 10 ? "0" : "") + secs;
 }
+
+/* Timer functions were added as a new feature. */
