@@ -117,5 +117,5 @@ if (dayjs().$H < 12) {
 } else if (dayjs().$H > 12 && dayjs().$H < 18) {
   greetingElement.innerHTML = 'Good Afternoon!';
 } else {
-  greetingElement.innerHTML = 'Good Night!';
+  greetingElement.innerHTML = 'Good Evening!';
 }
