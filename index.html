@@ -27,7 +27,7 @@
 
     <div class="grid-container"></div>
 
-    <div class="player-control">
+    <div class="player-control-none player-control">
         <div class="current-song-name">
             <p class="playing">Playing</p>
             <p class="song-name">Song Name</p>
@@ -37,6 +37,10 @@
             <audio id="song" class="js-song">
                 <source class="js-audio-source" src="-" type="audio/mpeg">
             </audio>
+
+            <div class="timer">
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
 
             <input type="range" value="0" id="progress">
 

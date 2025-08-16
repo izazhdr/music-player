@@ -31,6 +31,7 @@ body {
 .header {
   display: flex;
   position: fixed;
+  z-index: 1;
   top: 0;
   height: 80px;
   width: 100%;
@@ -96,7 +97,7 @@ body {
   border-radius: 20px;
   background-color: var(--theme-color);
   text-align: center;
-  height: 300px;
+  height: 260px;
   justify-content: center;
   align-items: center;
   border: 2px solid var(--dark-theme-color);
@@ -112,37 +113,18 @@ body {
   height: 200px;
   width: 230px;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .card-song-name {
   font-size: 30px;
   color: var(--text-color);
+  margin-bottom: 5px;
 }
 
 .card-artist-name {
   font-size: 20px;
-  margin-bottom: 10px;
   color: var(--text-color);
-}
-
-.card-play-button {
-  font-size: 18px;
-  font-style: italic;
-  background-color: var(--dark-theme-color);
-  border: none;
-  border-radius: 20px;
-  padding: 8px;
-  cursor: pointer;
-  color: var(--button-color);
-}
-
-.card-play-button:hover {
-  background-color: var(--color-hover);
-}
-
-.card-play-button-icon {
-  margin-left: 5px;
 }
 
 .grid-container {
@@ -167,6 +149,10 @@ body {
   border: none;
   border-radius: 20px;
   border: 2px solid var(--dark-theme-color);
+}
+
+.player-control-none {
+  display: none;
 }
 
 .music-player {
@@ -194,6 +180,15 @@ body {
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.timer {
+  color: var(--text-color);
+}
+
+.timer span {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .controls {

@@ -4,16 +4,18 @@ let ctrlIcon = document.getElementById("ctrlIcon");
 let songSource = document.querySelector('.js-song');
 let themeSwitch = document.querySelector('.theme-switch');
 let darkMode = document.querySelector('.dark-mode');
+let currentTimeEl = document.getElementById("currentTime");
+let durationEl = document.getElementById("duration");
 
-song.onloadedmetadata = function() {
+song.onloadedmetadata = function () {
   progress.max = song.duration;
-  progress.value = song.currentTime;
-}
+  durationEl.textContent = formatTime(song.duration);
+};
 
 let playPauseButton = document.querySelector('.js-play-pause');
 playPauseButton.addEventListener('click', () => {
   playPause();
-})
+});
 
 function playPause() {
   if (ctrlIcon.classList.contains('fa-pause')) {
@@ -29,18 +31,17 @@ function playPause() {
   }
 }
 
-if (song.play()) {
-  setInterval(() => {
-    progress.value = song.currentTime;
-  }, 500)
-}
+setInterval(() => {
+  progress.value = song.currentTime;
+  currentTimeEl.textContent = formatTime(song.currentTime);
+}, 500);
 
 progress.onchange = function() {
   song.load();
   song.play();
   song.currentTime = progress.value;
   ctrlIcon.classList.add("fa-pause");
-  ctrlIcon.classList.remove("fa-play"); 
+  ctrlIcon.classList.remove("fa-play");
 }
 
 themeSwitch.addEventListener('click', () => {
@@ -57,4 +58,11 @@ function enableDarkMode() {
 
 function disableDarkMode() {
   document.body.classList.remove('dark-mode');
+}
+
+function formatTime(seconds) {
+  seconds = Math.floor(seconds);
+  let mins = Math.floor(seconds / 60);
+  let secs = seconds % 60;
+  return mins + ":" + (secs < 10 ? "0" : "") + secs;
 }

@@ -4,11 +4,10 @@ let songGrid = '';
 
 songs.forEach((song) => {
   songGrid += `
-    <div class="card">
+    <div class="card js-card-play-button" data-song-id="${song.id}">
         <img src="${song.image}" class="card-image">
         <p class="card-song-name">${song.name}</p>
         <p class="card-artist-name">${song.artist}</p>
-        <button class="card-play-button js-card-play-button" data-song-id="${song.id}">PLAY <i class="card-play-button-icon fa-solid fa-play"></i></button>
     </div>
   `;
 });
@@ -19,6 +18,7 @@ let currentSongArray = [];
 let playButton = document.querySelectorAll('.js-card-play-button');
 let forwardButton = document.querySelector('.js-forward');
 let backwardButton = document.querySelector('.js-backward');
+let playerControl = document.querySelector('.player-control');
 
 let forwardPlacementValue;
 let backwardPlacementValue;
@@ -72,6 +72,7 @@ playButton.forEach((button) => {
   button.addEventListener('click', () => {
     let buttonId = button.dataset.songId;
     currentSong(songs, button, buttonId);
+    playerControl.classList.remove('player-control-none');
   });
 });
 
